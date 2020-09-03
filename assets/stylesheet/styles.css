@@ -1,0 +1,28 @@
+body {
+    background-image: url("../pizzaBackground.jpg");
+    color: black;
+}
+
+#header {
+    color:red;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+}
+#survey-form{
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    opacity: .9;
+    padding: 10px 40px;
+}
+
+#name, #email, #number {
+        width: 40%;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./assets/stylesheet/styles.css">
+</head>
+<body>
+    <header id="header">
+        
+<h1 id="title">
+    Making you the perfect pizza!</h1>
+<p id="description">Helping you to make the gnarliest slice for your tastebuds bud!</p>
+   
+</header>
+    <section>
+
+        <form id="survey-form">
+            <h3>Lets get this pie dialed in!</h3>
+            <!-- name -->
+           <div class="form-group">
+               <label id="name-label" for="name">Name</label>
+               <input type="text" name="name" id="name" class="form-input" placeholder="Your Name Here Groovy Person!" required />
+           </div>
+
+           <!-- email -->
+           <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-input" placeholder="Your Email Address for Excellent Service!" required />
+        </div>
+
+        <!-- number input slices -->
+        <div class="form-group">
+            <label id="number-label" for="slices">Name</label>
+            <input type="number" name="slices" id="number" class="form-input" min="1" max="20" placeholder="How Many Slices for Your Pizza? 1 to 20?!?!" required />
+        </div>
+
+        <!-- radio buttons sauces -->
+        <div class="form-group">
+            <p>What Sauce Would You Like On Your Pizza?</p>
+            <label><input name="sauce" value="marinara" type="radio" class="input-radio"/>Marinara</label>
+            <label><input name="sauce" value="alfredo" type="radio" class="input-radio"/>Alfredo</label>
+            <label><input name="sauce" value="olive-oil" type="radio" class="input-radio"/>Olive-Oil</label>
+            <label><input name="sauce" value="ranch" type="radio" class="input-radio"/>Ranch</label>
+            <label><input name="sauce" value="bbq" type="radio" class="input-radio"/>Barbeque</label>
+        
+        </div>
+
+        <!--checkboxes toppings-->
+
+        <div class="form-group">
+            <p>What Toppings Can We Add To Your Pizza?</p>
+            <label><input value="pepperopni "type="checkbox" name="toppings" class="input-checkbox">Pepperoni</label>
+            <label><input value="sausage "type="checkbox" name="toppings" class="input-checkbox">Sausage</label>
+            <label><input value="mushrooms "type="checkbox" name="toppings" class="input-checkbox">Mushroom</label>
+            <label><input value="jalepeno "type="checkbox" name="toppings" class="input-checkbox">Jalepeno</label>
+            <label><input value="black-olive "type="checkbox" name="toppings" class="input-checkbox">Black Olive</label>
+            <label><input value="onion "type="checkbox" name="toppings" class="input-checkbox">Onion</label>            <label><input value="pepperopni "type="checkbox" name="toppings" class="input-checkbox">Pepperoni</label>
+            <label><input value="tomato "type="checkbox" name="toppings" class="input-checkbox">Tomato</label>
+            <label><input value="canadian-bacon"type="checkbox" name="toppings" class="input-checkbox">Canadian Bacon</label>
+            <label><input value="pineapple "type="checkbox" name="toppings" class="input-checkbox">Pineapple</label>
+ 
+        </div>
+
+        <!--DropDown-->
+        <div class="form-group">
+            <p>What Crust Do You Prefer?</p>
+            <select name="crust" id="dropdown" class="form-input" required>
+                <option value disabled selected>Choose Your Crust Wisely</option>
+                <option value="thick">Thick</option>
+                <option value="thin">Thin</option>
+                <option value="gluten-free">Gluten Free</option>
+                <option value="whole-wheat">Whole Wheat</option>
+                <option value="calzone">Calzone</option>
+            </select>
+        </div>
+
+        <!--TextArea-->
+        <div class="form-group">
+        <textarea name="delivery-instructions" id="delivery" cols="30" rows="10" placeholder="Address and Any Special Instructions for Delivery Here!"></textarea>
+        </div>
+
+        <!--Submit Button-->
+        <button id="submit">Order You Pizza!</button>
+    </form>
+
+    </section>
+   
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script text="text/javascript" src="./script.js"></script>
+</body>
+</html>
