@@ -18,12 +18,12 @@
         <h1 id="title">It's Pizza Night!</h1>
         <img class="pizzaSpin rotate" src="./assets/roundPie.png" alt="pizzaPie">
     </header>
-    <div><p id="description">Helping you to make the gnarliest slice for your tastebuds bud!</p>
+    <div><h2 id="description">Helping you to make the gnarliest slice for your tastebuds bud!</h2>
 </div>
     <section class="container">
 
         <form id="survey-form">
-            <h3><strong>Lets Order This Pie!</strong></h3>
+            <h2><strong>Lets Order This Pie!</strong></h2>
             <!-- name -->
             <div class="form-group">
                 <label id="name-label" for="name">Name</label>
@@ -47,41 +47,44 @@
 
             <!-- radio buttons sauces -->
             <div class="form-group">
-                <p><strong>What Sauce Would You Like On Your Pizza?</strong></p>
-                <label><input name="sauce" value="marinara" type="radio" class="input-radio" />Marinara</label>
-                <label><input name="sauce" value="alfredo" type="radio" class="input-radio" />Alfredo</label>
-                <label><input name="sauce" value="olive-oil" type="radio" class="input-radio" />Olive-Oil</label>
-                <label><input name="sauce" value="ranch" type="radio" class="input-radio" />Ranch</label>
-                <label><input name="sauce" value="bbq" type="radio" class="input-radio" />Barbeque</label>
-
+                <h2><strong>What Sauce Would You Like On Your Pizza?</strong></h2>
+                <div id="sauce-choice">
+                    <label><input name="sauce" value="marinara" type="radio" class="input-radio" />Marinara</label>
+                    <label><input name="sauce" value="alfredo" type="radio" class="input-radio" />Alfredo</label>
+                    <label><input name="sauce" value="olive-oil" type="radio" class="input-radio" />Olive-Oil</label>
+                    <label><input name="sauce" value="ranch" type="radio" class="input-radio" />Ranch</label>
+                    <label><input name="sauce" value="bbq" type="radio" class="input-radio" />Barbeque</label>
+                </div>
             </div>
 
             <!--checkboxes toppings-->
 
             <div class="form-group">
-                <p><strong>What Toppings Can We Add To Your Pizza?</strong></p>
-                <p>--Check all that apply--</p>
-                <label><input value="pepperopni " type="checkbox" name="toppings"
-                        class="input-checkbox">Pepperoni</label><br>
-                <label><input value="sausage " type="checkbox" name="toppings"
-                        class="input-checkbox">Sausage</label><br>
-                <label><input value="mushrooms " type="checkbox" name="toppings"
-                        class="input-checkbox">Mushroom</label><br>
-                <label><input value="jalepeno " type="checkbox" name="toppings"
-                        class="input-checkbox">Jalepeno</label><br>
-                <label><input value="black-olive " type="checkbox" name="toppings" class="input-checkbox">Black
-                    Olive</label><br>
-                <label><input value="onion " type="checkbox" name="toppings" class="input-checkbox">Onion</label><br>
-                <label><input value="tomato " type="checkbox" name="toppings" class="input-checkbox">Tomato</label><br>
-                <label><input value="canadian-bacon" type="checkbox" name="toppings" class="input-checkbox">Canadian
-                    Bacon</label><br>
-                <label><input value="pineapple " type="checkbox" name="toppings"
-                        class="input-checkbox">Pineapple</label><br>
+                <h2><strong>What Toppings Can We Add To Your Pizza?</strong></h2>
+                <h3>--Check all that apply--</h3>
+                <div id="topping-choice">
+                    <label><input value="pepperopni " type="checkbox" name="toppings"
+                            class="input-checkbox">Pepperoni</label>
+                    <label><input value="sausage " type="checkbox" name="toppings"
+                            class="input-checkbox">Sausage</label>
+                    <label><input value="mushrooms " type="checkbox" name="toppings"
+                            class="input-checkbox">Mushroom</label>
+                    <label><input value="jalepeno " type="checkbox" name="toppings"
+                            class="input-checkbox">Jalepeno</label>
+                    <label><input value="black-olive " type="checkbox" name="toppings" class="input-checkbox">Black
+                        Olive</label>
+                    <label><input value="onion " type="checkbox" name="toppings" class="input-checkbox">Onion</label>
+                    <label><input value="tomato " type="checkbox" name="toppings" class="input-checkbox">Tomato</label>
+                    <label><input value="canadian-bacon" type="checkbox" name="toppings" class="input-checkbox">Canadian
+                        Bacon</label>
+                    <label><input value="pineapple " type="checkbox" name="toppings"
+                            class="input-checkbox">Pineapple</label>
+                </div>
             </div>
 
             <!--DropDown-->
             <div class="form-group">
-                <p><strong>What Crust Do You Prefer?</strong></p>
+                <h2><strong>What Crust Do You Prefer?</strong></h2>
                 <select name="crust" id="dropdown" class="form-input" required>
                     <option value disabled selected>Choose Your Crust Wisely</option>
                     <option value="thick">Thick</option>

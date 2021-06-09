@@ -20,7 +20,9 @@ body {
     border-radius: 10px;
     opacity: .9;
     max-height: 300px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #title{
@@ -52,7 +54,7 @@ body {
     }
 }
 
-h3 {
+h2, h3 {
     text-align: center;
     flex-direction: column;
 }
@@ -96,9 +98,18 @@ h3 {
     align-items: center;
 }
 
-.input-radio{
-    width: 50%;
+#sauce-choice {
+    text-align: center;
 }
+
+#topping-choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* .input-radio{
+    width: 50%;
+} */
 
 p {
     text-align: center;
